@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name : "Andhika",
+            interest : "AI, Devops, Backend",
+            city : "jakarta"
+        }
+
+        console.info(`name: ${person["name"]}`)
+        console.info(`interest: ${person.interest}`)
+        console.info(`city: ${person.city}`)
+        console.table(person)
+        
+        // canggihnya bisa di delete cuy fieldnya
+        delete person["interest"]
+        person.interest = "AI, Devops, Backend, Cybersecurity"
+        console.table(person)
+    </script>
+</body>
+</html>

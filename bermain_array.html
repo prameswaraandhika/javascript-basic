@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = ["Andhika", "Nobara", "Yuji"]
+        students.push("Rahmat")
+        students.push("Sukuna")
+
+        students.push("Jiraya", "Kakashi")
+        console.table(students)
+        
+        delete students[1]
+        console.table(students)
+        
+        students[2] = "Itadori"
+        console.table(students)
+        
+        students[1] = "Nobara Mati Suri"
+        console.table(students)
+    </script>
+</body>
+</html>
