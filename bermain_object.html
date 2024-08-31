@@ -22,6 +22,35 @@
         delete person["interest"]
         person.interest = "AI, Devops, Backend, Cybersecurity"
         console.table(person)
+
+        const todo = new Object()
+        todo.name = "Buy Kijang Innova"
+        todo.complete = true
+        
+        const listPerson = [
+            {name: "Andhika", interest: "Java"},
+            {name: "Umar", interest: "Java"},
+            {name: "Khalid", interest: "Java"},
+            {name: "Yuji Itadori", interest: "Java"},
+        ]
+        console.table(listPerson)
+        console.log(`get first name of listPerson: ${listPerson[0].name}`)
+
+        const personDetails = {
+            name: "Andhika",
+            location: {
+                coords: {
+                    lat: 42.1111,
+                    lng: -11.2222
+                }
+            },
+            adress: {
+                RT: '002',
+                RW: '003',
+            }
+        }
+        console.log(personDetails)
+        console.log(`Acces object: ${Object.keys(personDetails)}`)
     </script>
 </body>
 </html>

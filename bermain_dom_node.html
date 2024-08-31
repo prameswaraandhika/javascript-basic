@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="name">Andhika Prameswara</p>
+    <ul  id="menu">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+    <script>
+        //  <!-- document -->
+        // console.info(document.title)
+        // console.info(document.head)
+        // console.info(document.body)
+        // console.info(document.images)
+
+        const nameInput = document.getElementById("name")
+        console.info(nameInput)
+
+        const menu = document.getElementById("menu")
+        console.info(menu)
+
+        const first = document.getElementById("first")
+        const second = document.getElementById("second")
+        // console.info(first.textContent)
+        console.info(first.nextSibling.nextSibling)
+        
+        menu.removeChild(document.getElementById("first"))
+        menu.removeChild(document.getElementById("second"))
+
+        menu.appendChild(first)
+        menu.appendChild(second)
+     </script>
+</body>
+</html>
